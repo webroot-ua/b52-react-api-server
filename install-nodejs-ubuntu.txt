@@ -1,0 +1,24 @@
+https://youtu.be/ivDjWYcKDZI?t=11733
+
+https://computingforgeeks.com/install-node-js-14-on-ubuntu-debian-linux/
+
+On hosting server:
+sudo apt update
+sudo apt install git
+git clone https://github.com/webroot-ua/b52-react-api-server.git
+
+nano production.json
+"port": 80
+"baseUrl": "http://domen"
+
+In root folder:
+npm install
+npm run admin:install
+npm run admin:build
+
+npm run start
+
+Background server runing:
+SSH:~# sudo npm install -g pm2
+pm2 start npm -- start
+pm2 stop 0                     // 0 - process index 
