@@ -1,0 +1,32 @@
+{
+  "name": "2server",
+  "version": "1.0.0",
+  "description": "b52 backend server",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "admin": "npm run start --prefix admin",
+    "admin:install": "npm install --prefix admin",
+    "admin:build": "npm run build --prefix admin",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run admin\""
+  },
+  "keywords": [
+    "b52",
+    "server"
+  ],
+  "author": "Roman Tyskyy <webroot@ukr.net>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "firebird": "^0.1.5",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "host": "127.0.0.1",
+  "port": 8000,
+  "db": "./db/B52.gdb",
+  "user": "sysdba",
+  "password": "masterkey",
+  "role": "",
+  "jwtSecret": "meni13mynalo",
+  "baseUrl": "http://localhost:8000"
+}
